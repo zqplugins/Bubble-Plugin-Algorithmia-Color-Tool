@@ -1,0 +1,124 @@
+{
+    "auth": "none",
+    "calls": {
+        "AAC": {
+            "body": "[\"<URL of Photo>\", <Number of Colors>]",
+            "body_params": {
+                "AAT": {
+                    "key": "URL of Photo",
+                    "private": true,
+                    "value": "",
+                    "visibility": "public"
+                },
+                "AAU": {
+                    "key": "Number of Colors",
+                    "private": true,
+                    "value": "",
+                    "visibility": "public"
+                }
+            },
+            "headers": {
+                "AAD": {
+                    "key": "Content-Type",
+                    "private": true,
+                    "value": "application/json",
+                    "visibility": "hidden"
+                },
+                "AAE": {
+                    "key": "Authorization",
+                    "private": true,
+                    "visibility": "secret"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "Get Color Palette",
+            "publish_as": "action",
+            "rank": 0,
+            "ret_value": "api.1536350261424x603864527327985700.plugin_api.AAC",
+            "types": "{\"plugin_api.AAC\":{\"caption\":\"Get Color Palette\",\"fields\":{\"_p_result.main_color\":{\"ret_value\":\"list.number\",\"caption\":\"main_color\",\"path\":[\"result\",\"main_color\"]},\"_p_result.palette\":{\"ret_value\":\"list.api.1536350261424x603864527327985700.plugin_api.AAC.result.palette\",\"caption\":\"palette\",\"path\":[\"result\",\"palette\"]},\"_p_metadata.content_type\":{\"ret_value\":\"text\",\"caption\":\"metadata content_type\",\"path\":[\"metadata\",\"content_type\"]},\"_p_metadata.duration\":{\"ret_value\":\"number\",\"caption\":\"metadata duration\",\"path\":[\"metadata\",\"duration\"]}}},\"plugin_api.AAC.result.palette\":{\"caption\":\"Get Color Palette result palette\",\"fields\":{\"_p___items__\":{\"ret_value\":\"list.text\",\"caption\":\"palette item 1\",\"no_key\":true}}}}",
+            "url": "https://api.algorithmia.com/v1/algo/opencv/ColorsFromImage/0.1.0"
+        },
+        "AAV": {
+            "initialized": true,
+            "method": "get",
+            "name": "Convert RGB to Hex",
+            "publish_as": "action",
+            "rank": 2,
+            "ret_value": "api.1536350261424x603864527327985700.plugin_api.AAV",
+            "types": "{\"plugin_api.AAV\":{\"caption\":\"Convert RGB to Hex\",\"fields\":{\"_p_hex.value\":{\"ret_value\":\"text\",\"caption\":\"hex value\",\"path\":[\"hex\",\"value\"]},\"_p_hex.clean\":{\"ret_value\":\"text\",\"caption\":\"hex clean\",\"path\":[\"hex\",\"clean\"]},\"_p_rgb.fraction.r\":{\"ret_value\":\"number\",\"caption\":\"rgb fraction r\",\"path\":[\"rgb\",\"fraction\",\"r\"]},\"_p_rgb.fraction.g\":{\"ret_value\":\"number\",\"caption\":\"rgb fraction g\",\"path\":[\"rgb\",\"fraction\",\"g\"]},\"_p_rgb.fraction.b\":{\"ret_value\":\"number\",\"caption\":\"rgb fraction b\",\"path\":[\"rgb\",\"fraction\",\"b\"]},\"_p_rgb.r\":{\"ret_value\":\"number\",\"caption\":\"rgb r\",\"path\":[\"rgb\",\"r\"]},\"_p_rgb.g\":{\"ret_value\":\"number\",\"caption\":\"rgb g\",\"path\":[\"rgb\",\"g\"]},\"_p_rgb.b\":{\"ret_value\":\"number\",\"caption\":\"rgb b\",\"path\":[\"rgb\",\"b\"]},\"_p_rgb.value\":{\"ret_value\":\"text\",\"caption\":\"rgb value\",\"path\":[\"rgb\",\"value\"]},\"_p_hsl.fraction.h\":{\"ret_value\":\"number\",\"caption\":\"hsl fraction h\",\"path\":[\"hsl\",\"fraction\",\"h\"]},\"_p_hsl.fraction.s\":{\"ret_value\":\"number\",\"caption\":\"hsl fraction s\",\"path\":[\"hsl\",\"fraction\",\"s\"]},\"_p_hsl.fraction.l\":{\"ret_value\":\"number\",\"caption\":\"hsl fraction l\",\"path\":[\"hsl\",\"fraction\",\"l\"]},\"_p_hsl.h\":{\"ret_value\":\"number\",\"caption\":\"hsl h\",\"path\":[\"hsl\",\"h\"]},\"_p_hsl.s\":{\"ret_value\":\"number\",\"caption\":\"hsl s\",\"path\":[\"hsl\",\"s\"]},\"_p_hsl.l\":{\"ret_value\":\"number\",\"caption\":\"hsl l\",\"path\":[\"hsl\",\"l\"]},\"_p_hsl.value\":{\"ret_value\":\"text\",\"caption\":\"hsl value\",\"path\":[\"hsl\",\"value\"]},\"_p_hsv.fraction.h\":{\"ret_value\":\"number\",\"caption\":\"hsv fraction h\",\"path\":[\"hsv\",\"fraction\",\"h\"]},\"_p_hsv.fraction.s\":{\"ret_value\":\"number\",\"caption\":\"hsv fraction s\",\"path\":[\"hsv\",\"fraction\",\"s\"]},\"_p_hsv.fraction.v\":{\"ret_value\":\"number\",\"caption\":\"hsv fraction v\",\"path\":[\"hsv\",\"fraction\",\"v\"]},\"_p_hsv.value\":{\"ret_value\":\"text\",\"caption\":\"hsv value\",\"path\":[\"hsv\",\"value\"]},\"_p_hsv.h\":{\"ret_value\":\"number\",\"caption\":\"hsv h\",\"path\":[\"hsv\",\"h\"]},\"_p_hsv.s\":{\"ret_value\":\"number\",\"caption\":\"hsv s\",\"path\":[\"hsv\",\"s\"]},\"_p_hsv.v\":{\"ret_value\":\"number\",\"caption\":\"hsv v\",\"path\":[\"hsv\",\"v\"]},\"_p_name.value\":{\"ret_value\":\"text\",\"caption\":\"name value\",\"path\":[\"name\",\"value\"]},\"_p_name.closest_named_hex\":{\"ret_value\":\"text\",\"caption\":\"name closest_named_hex\",\"path\":[\"name\",\"closest_named_hex\"]},\"_p_name.exact_match_name\":{\"ret_value\":\"boolean\",\"caption\":\"name exact_match_name\",\"path\":[\"name\",\"exact_match_name\"]},\"_p_name.distance\":{\"ret_value\":\"number\",\"caption\":\"name distance\",\"path\":[\"name\",\"distance\"]},\"_p_cmyk.fraction.c\":{\"ret_value\":\"number\",\"caption\":\"cmyk fraction c\",\"path\":[\"cmyk\",\"fraction\",\"c\"]},\"_p_cmyk.fraction.m\":{\"ret_value\":\"number\",\"caption\":\"cmyk fraction m\",\"path\":[\"cmyk\",\"fraction\",\"m\"]},\"_p_cmyk.fraction.y\":{\"ret_value\":\"number\",\"caption\":\"cmyk fraction y\",\"path\":[\"cmyk\",\"fraction\",\"y\"]},\"_p_cmyk.fraction.k\":{\"ret_value\":\"number\",\"caption\":\"cmyk fraction k\",\"path\":[\"cmyk\",\"fraction\",\"k\"]},\"_p_cmyk.value\":{\"ret_value\":\"text\",\"caption\":\"cmyk value\",\"path\":[\"cmyk\",\"value\"]},\"_p_cmyk.c\":{\"ret_value\":\"number\",\"caption\":\"cmyk c\",\"path\":[\"cmyk\",\"c\"]},\"_p_cmyk.m\":{\"ret_value\":\"number\",\"caption\":\"cmyk m\",\"path\":[\"cmyk\",\"m\"]},\"_p_cmyk.y\":{\"ret_value\":\"number\",\"caption\":\"cmyk y\",\"path\":[\"cmyk\",\"y\"]},\"_p_cmyk.k\":{\"ret_value\":\"number\",\"caption\":\"cmyk k\",\"path\":[\"cmyk\",\"k\"]},\"_p_XYZ.fraction.X\":{\"ret_value\":\"number\",\"caption\":\"XYZ fraction X\",\"path\":[\"XYZ\",\"fraction\",\"X\"]},\"_p_XYZ.fraction.Y\":{\"ret_value\":\"number\",\"caption\":\"XYZ fraction Y\",\"path\":[\"XYZ\",\"fraction\",\"Y\"]},\"_p_XYZ.fraction.Z\":{\"ret_value\":\"number\",\"caption\":\"XYZ fraction Z\",\"path\":[\"XYZ\",\"fraction\",\"Z\"]},\"_p_XYZ.value\":{\"ret_value\":\"text\",\"caption\":\"XYZ value\",\"path\":[\"XYZ\",\"value\"]},\"_p_XYZ.X\":{\"ret_value\":\"number\",\"caption\":\"XYZ X\",\"path\":[\"XYZ\",\"X\"]},\"_p_XYZ.Y\":{\"ret_value\":\"number\",\"caption\":\"XYZ Y\",\"path\":[\"XYZ\",\"Y\"]},\"_p_XYZ.Z\":{\"ret_value\":\"number\",\"caption\":\"XYZ Z\",\"path\":[\"XYZ\",\"Z\"]},\"_p_image.bare\":{\"ret_value\":\"text\",\"caption\":\"image bare\",\"path\":[\"image\",\"bare\"]},\"_p_image.named\":{\"ret_value\":\"text\",\"caption\":\"image named\",\"path\":[\"image\",\"named\"]},\"_p_contrast.value\":{\"ret_value\":\"text\",\"caption\":\"contrast value\",\"path\":[\"contrast\",\"value\"]},\"_p__links.self.href\":{\"ret_value\":\"text\",\"caption\":\"_links self href\",\"path\":[\"_links\",\"self\",\"href\"]}}}}",
+            "url": "http://thecolorapi.com/id?rgb=[RGB COLORS]",
+            "url_params": {
+                "AAW": {
+                    "key": "RGB COLORS",
+                    "private": true,
+                    "value": "",
+                    "visibility": "public"
+                }
+            }
+        },
+        "AAY": {
+            "0": "A",
+            "1": "A",
+            "2": "X",
+            "body": "[\"<URL of Photo>\", <Number of Colors>]",
+            "body_params": {
+                "AAT": {
+                    "key": "URL of Photo",
+                    "private": true,
+                    "value": "",
+                    "visibility": "public"
+                },
+                "AAU": {
+                    "key": "Number of Colors",
+                    "private": true,
+                    "value": "",
+                    "visibility": "public"
+                }
+            },
+            "headers": {
+                "AAD": {
+                    "key": "Content-Type",
+                    "private": true,
+                    "value": "application/json",
+                    "visibility": "hidden"
+                },
+                "AAE": {
+                    "key": "Authorization",
+                    "private": true,
+                    "visibility": "secret"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "Get Color Palette",
+            "publish_as": "data",
+            "rank": 1,
+            "ret_value": "api.1536350261424x603864527327985700.plugin_api.AAY",
+            "types": "{\"plugin_api.AAY\":{\"caption\":\"Get Color Palette\",\"fields\":{\"_p_result.main_color\":{\"ret_value\":\"list.text\",\"caption\":\"main_color\",\"path\":[\"result\",\"main_color\"]},\"_p_result.palette\":{\"ret_value\":\"list.api.1536350261424x603864527327985700.plugin_api.AAY.result.palette\",\"caption\":\"palette\",\"path\":[\"result\",\"palette\"]},\"_p_metadata.content_type\":{\"ret_value\":\"text\",\"caption\":\"metadata content_type\",\"path\":[\"metadata\",\"content_type\"]},\"_p_metadata.duration\":{\"ret_value\":\"number\",\"caption\":\"metadata duration\",\"path\":[\"metadata\",\"duration\"]}}},\"plugin_api.AAY.result.palette\":{\"caption\":\"Get Color Palette result palette\",\"fields\":{\"_p___items__\":{\"ret_value\":\"list.text\",\"caption\":\"palette item 1\",\"no_key\":true}}}}",
+            "url": "https://api.algorithmia.com/v1/algo/opencv/ColorsFromImage/0.1.0"
+        },
+        "AAa": {
+            "0": "A",
+            "1": "A",
+            "2": "Z",
+            "initialized": true,
+            "method": "get",
+            "name": "Convert RGB to Hex",
+            "publish_as": "data",
+            "rank": 3,
+            "ret_value": "api.1536350261424x603864527327985700.plugin_api.AAa",
+            "types": "{\"plugin_api.AAa\":{\"caption\":\"Convert RGB to Hex\",\"fields\":{\"_p_hex.value\":{\"ret_value\":\"text\",\"caption\":\"hex value\",\"path\":[\"hex\",\"value\"]},\"_p_hex.clean\":{\"ret_value\":\"text\",\"caption\":\"hex clean\",\"path\":[\"hex\",\"clean\"]},\"_p_rgb.fraction.r\":{\"ret_value\":\"number\",\"caption\":\"rgb fraction r\",\"path\":[\"rgb\",\"fraction\",\"r\"]},\"_p_rgb.fraction.g\":{\"ret_value\":\"number\",\"caption\":\"rgb fraction g\",\"path\":[\"rgb\",\"fraction\",\"g\"]},\"_p_rgb.fraction.b\":{\"ret_value\":\"number\",\"caption\":\"rgb fraction b\",\"path\":[\"rgb\",\"fraction\",\"b\"]},\"_p_rgb.r\":{\"ret_value\":\"number\",\"caption\":\"rgb r\",\"path\":[\"rgb\",\"r\"]},\"_p_rgb.g\":{\"ret_value\":\"number\",\"caption\":\"rgb g\",\"path\":[\"rgb\",\"g\"]},\"_p_rgb.b\":{\"ret_value\":\"number\",\"caption\":\"rgb b\",\"path\":[\"rgb\",\"b\"]},\"_p_rgb.value\":{\"ret_value\":\"text\",\"caption\":\"rgb value\",\"path\":[\"rgb\",\"value\"]},\"_p_hsl.fraction.h\":{\"ret_value\":\"number\",\"caption\":\"hsl fraction h\",\"path\":[\"hsl\",\"fraction\",\"h\"]},\"_p_hsl.fraction.s\":{\"ret_value\":\"number\",\"caption\":\"hsl fraction s\",\"path\":[\"hsl\",\"fraction\",\"s\"]},\"_p_hsl.fraction.l\":{\"ret_value\":\"number\",\"caption\":\"hsl fraction l\",\"path\":[\"hsl\",\"fraction\",\"l\"]},\"_p_hsl.h\":{\"ret_value\":\"number\",\"caption\":\"hsl h\",\"path\":[\"hsl\",\"h\"]},\"_p_hsl.s\":{\"ret_value\":\"number\",\"caption\":\"hsl s\",\"path\":[\"hsl\",\"s\"]},\"_p_hsl.l\":{\"ret_value\":\"number\",\"caption\":\"hsl l\",\"path\":[\"hsl\",\"l\"]},\"_p_hsl.value\":{\"ret_value\":\"text\",\"caption\":\"hsl value\",\"path\":[\"hsl\",\"value\"]},\"_p_hsv.fraction.h\":{\"ret_value\":\"number\",\"caption\":\"hsv fraction h\",\"path\":[\"hsv\",\"fraction\",\"h\"]},\"_p_hsv.fraction.s\":{\"ret_value\":\"number\",\"caption\":\"hsv fraction s\",\"path\":[\"hsv\",\"fraction\",\"s\"]},\"_p_hsv.fraction.v\":{\"ret_value\":\"number\",\"caption\":\"hsv fraction v\",\"path\":[\"hsv\",\"fraction\",\"v\"]},\"_p_hsv.value\":{\"ret_value\":\"text\",\"caption\":\"hsv value\",\"path\":[\"hsv\",\"value\"]},\"_p_hsv.h\":{\"ret_value\":\"number\",\"caption\":\"hsv h\",\"path\":[\"hsv\",\"h\"]},\"_p_hsv.s\":{\"ret_value\":\"number\",\"caption\":\"hsv s\",\"path\":[\"hsv\",\"s\"]},\"_p_hsv.v\":{\"ret_value\":\"number\",\"caption\":\"hsv v\",\"path\":[\"hsv\",\"v\"]},\"_p_name.value\":{\"ret_value\":\"text\",\"caption\":\"name value\",\"path\":[\"name\",\"value\"]},\"_p_name.closest_named_hex\":{\"ret_value\":\"text\",\"caption\":\"name closest_named_hex\",\"path\":[\"name\",\"closest_named_hex\"]},\"_p_name.exact_match_name\":{\"ret_value\":\"boolean\",\"caption\":\"name exact_match_name\",\"path\":[\"name\",\"exact_match_name\"]},\"_p_name.distance\":{\"ret_value\":\"number\",\"caption\":\"name distance\",\"path\":[\"name\",\"distance\"]},\"_p_cmyk.fraction.c\":{\"ret_value\":\"number\",\"caption\":\"cmyk fraction c\",\"path\":[\"cmyk\",\"fraction\",\"c\"]},\"_p_cmyk.fraction.m\":{\"ret_value\":\"number\",\"caption\":\"cmyk fraction m\",\"path\":[\"cmyk\",\"fraction\",\"m\"]},\"_p_cmyk.fraction.y\":{\"ret_value\":\"number\",\"caption\":\"cmyk fraction y\",\"path\":[\"cmyk\",\"fraction\",\"y\"]},\"_p_cmyk.fraction.k\":{\"ret_value\":\"number\",\"caption\":\"cmyk fraction k\",\"path\":[\"cmyk\",\"fraction\",\"k\"]},\"_p_cmyk.value\":{\"ret_value\":\"text\",\"caption\":\"cmyk value\",\"path\":[\"cmyk\",\"value\"]},\"_p_cmyk.c\":{\"ret_value\":\"number\",\"caption\":\"cmyk c\",\"path\":[\"cmyk\",\"c\"]},\"_p_cmyk.m\":{\"ret_value\":\"number\",\"caption\":\"cmyk m\",\"path\":[\"cmyk\",\"m\"]},\"_p_cmyk.y\":{\"ret_value\":\"number\",\"caption\":\"cmyk y\",\"path\":[\"cmyk\",\"y\"]},\"_p_cmyk.k\":{\"ret_value\":\"number\",\"caption\":\"cmyk k\",\"path\":[\"cmyk\",\"k\"]},\"_p_XYZ.fraction.X\":{\"ret_value\":\"number\",\"caption\":\"XYZ fraction X\",\"path\":[\"XYZ\",\"fraction\",\"X\"]},\"_p_XYZ.fraction.Y\":{\"ret_value\":\"number\",\"caption\":\"XYZ fraction Y\",\"path\":[\"XYZ\",\"fraction\",\"Y\"]},\"_p_XYZ.fraction.Z\":{\"ret_value\":\"number\",\"caption\":\"XYZ fraction Z\",\"path\":[\"XYZ\",\"fraction\",\"Z\"]},\"_p_XYZ.value\":{\"ret_value\":\"text\",\"caption\":\"XYZ value\",\"path\":[\"XYZ\",\"value\"]},\"_p_XYZ.X\":{\"ret_value\":\"number\",\"caption\":\"XYZ X\",\"path\":[\"XYZ\",\"X\"]},\"_p_XYZ.Y\":{\"ret_value\":\"number\",\"caption\":\"XYZ Y\",\"path\":[\"XYZ\",\"Y\"]},\"_p_XYZ.Z\":{\"ret_value\":\"number\",\"caption\":\"XYZ Z\",\"path\":[\"XYZ\",\"Z\"]},\"_p_image.bare\":{\"ret_value\":\"text\",\"caption\":\"image bare\",\"path\":[\"image\",\"bare\"]},\"_p_image.named\":{\"ret_value\":\"text\",\"caption\":\"image named\",\"path\":[\"image\",\"named\"]},\"_p_contrast.value\":{\"ret_value\":\"text\",\"caption\":\"contrast value\",\"path\":[\"contrast\",\"value\"]},\"_p__links.self.href\":{\"ret_value\":\"text\",\"caption\":\"_links self href\",\"path\":[\"_links\",\"self\",\"href\"]}}}}",
+            "url": "http://thecolorapi.com/id?rgb=[RGB COLORS]",
+            "url_params": {
+                "AAW": {
+                    "key": "RGB COLORS",
+                    "private": true,
+                    "value": "",
+                    "visibility": "public"
+                }
+            }
+        }
+    },
+    "human": "Algorithma"
+}

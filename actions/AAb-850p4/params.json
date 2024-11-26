@@ -1,0 +1,24 @@
+{
+    "category": "plugins",
+    "display": "Get Palette",
+    "fields": {
+        "AAd": {
+            "caption": "Image Url",
+            "editor": "DynamicValue",
+            "name": "imageurl",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "return_value": {
+        "AAc": {
+            "caption": "palette",
+            "is_list": true,
+            "name": "palette",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side",
+    "use_packages": true
+}
